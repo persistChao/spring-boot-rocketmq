@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-boot-rocketmq
+
+
+#rocketmq producer
+rocketmq:
+  producer:
+    isOnOff: on
+    groupName: ${spring.application.name}
+    nameSrvAddr: 127.0.0.1:9876
+    maxMessageSize: 4096
+    sendMsgTimeout: 3000
+    retryTimesWhenSendFailed: 2
+#rocketmq consumer
+  consumer:
+    isOnOff: on
+    groupName: ${spring.application.name}
+    nameSrvAddr: 127.0.0.1:9876
+    topics: TestTopic*
+    consumeThreadMin: 20
+    consumeThreadMax: 64
+    consumeMessageBatchMaxSize: 1
