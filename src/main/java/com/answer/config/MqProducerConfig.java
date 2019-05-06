@@ -64,7 +64,7 @@ public class MqProducerConfig {
 
         try {
             producer.start();
-            logger.info(String.format("producer is start! groupName:[%s] , namesrvAddr:[%s]") , this.groupName , this.namesrvAddr);
+            logger.info(String.format("producer is start! groupName:[] , namesrvAddr:[]") , this.groupName , this.namesrvAddr);
         }catch (RocketMQException e){
             logger.error(String.format("producer is error {}", e.getMessage(), e));
             throw new RocketMQException(e);
