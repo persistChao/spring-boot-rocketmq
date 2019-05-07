@@ -22,7 +22,7 @@ public class DelayConsumer {
     private String namesrvAddr;
 
     public void defaultMQPushConsumer() {
-        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("delayGroup");
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("delayConsumeGroup");
         consumer.setNamesrvAddr(namesrvAddr);
         try {
             consumer.subscribe("TopicTest1", "push");

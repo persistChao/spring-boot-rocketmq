@@ -1,5 +1,7 @@
 package com.answer.producer;
 
+import cn.hutool.log.Log;
+import cn.hutool.log.LogFactory;
 import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
@@ -18,6 +20,8 @@ import org.springframework.util.StopWatch;
 @Service
 public class DelayMQProducer {
 
+    Log log = LogFactory.get();
+
     @Value("${rocketmq.producer.nameSrvAddr}")
     private String namesrvAddr;
 
@@ -29,12 +33,13 @@ public class DelayMQProducer {
 
         try {
             producer.start();
-            Message message = new Message("TopicTest1", "push", "发送延迟消息---".getBytes());
-            message.setDelayTimeLevel(3);
+            Message message = new Message("DelayTopic", "push", "发送延迟消息---".getBytes());
+            message.setDelayTimeLevel(4);
             StopWatch stopWatch = new StopWatch();
             stopWatch.start();
 
             SendResult result = producer.send(message);
+            System.out.println("send result =" + result);
         } catch (MQClientException e) {
             e.printStackTrace();
         } catch (RemotingException e) {
