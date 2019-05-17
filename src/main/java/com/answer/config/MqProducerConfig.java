@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
  * @Author answer
  * @Date 2019/3/29 12 50
  */
-@Configuration
+//@Configuration
 public class MqProducerConfig {
     private static final Logger logger = LoggerFactory.getLogger(MqProducerConfig.class);
 

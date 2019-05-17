@@ -21,7 +21,7 @@ public class MyProducer {
     Log log = LogFactory.get();
 
     public static final Logger logger = LoggerFactory.getLogger(MQConsumerConfiguration.class);
-    @Value("${rocketmq.consumer.namesrvAddr}")
+    @Value("${rocketmq.producer.nameSrvAddr}")
     private String namesrvAddr;
     @Value("${rocketmq.consumer.groupName}")
     private String groupName;

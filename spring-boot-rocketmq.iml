@@ -52,7 +52,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.2.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.ow2.asm:asm:5.0.3" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:2.6.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-core:1.10.19" level="project" />
@@ -71,5 +70,10 @@
     <orderEntry type="library" name="Maven: io.netty:netty-tcnative-boringssl-static:1.1.33.Fork26" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.4" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.54" level="project" />
+    <orderEntry type="library" name="Maven: org.fusesource.jansi:jansi:1.17.1" level="project" />
+    <orderEntry type="library" name="Maven: janino:janino:2.5.10" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.22" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-all:4.5.8" level="project" />
   </component>
 </module>

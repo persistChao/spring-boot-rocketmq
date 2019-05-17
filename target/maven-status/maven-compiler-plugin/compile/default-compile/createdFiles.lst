@@ -1,8 +1,0 @@
-com\answer\consumer\MQConsumerConfiguration.class
-com\answer\exception\RocketMQException.class
-com\answer\config\MqProducerConfig.class
-com\answer\exception\AppException.class
-com\answer\exception\RocketMQErrorEnum.class
-com\answer\SpringBootRocketmqApplication.class
-com\answer\exception\ErrorCode.class
-com\answer\listener\MQConsumeMsgListenerProcessor.class

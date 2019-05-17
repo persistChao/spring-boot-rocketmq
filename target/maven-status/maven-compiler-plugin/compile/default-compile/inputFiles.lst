@@ -1,8 +1,0 @@
-C:\git_project\spring-boot-rocketmq\src\main\java\com\answer\exception\ErrorCode.java
-C:\git_project\spring-boot-rocketmq\src\main\java\com\answer\config\MqProducerConfig.java
-C:\git_project\spring-boot-rocketmq\src\main\java\com\answer\exception\AppException.java
-C:\git_project\spring-boot-rocketmq\src\main\java\com\answer\SpringBootRocketmqApplication.java
-C:\git_project\spring-boot-rocketmq\src\main\java\com\answer\consumer\MQConsumerConfiguration.java
-C:\git_project\spring-boot-rocketmq\src\main\java\com\answer\exception\RocketMQErrorEnum.java
-C:\git_project\spring-boot-rocketmq\src\main\java\com\answer\exception\RocketMQException.java
-C:\git_project\spring-boot-rocketmq\src\main\java\com\answer\listener\MQConsumeMsgListenerProcessor.java
