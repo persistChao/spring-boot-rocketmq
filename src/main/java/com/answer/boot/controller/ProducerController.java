@@ -38,6 +38,8 @@ public class ProducerController {
             user.setId(i);
             String json = JSONObject.toJSONString(user);
             Message msg = new Message("user-topic", "white", json.getBytes());
+            //延迟消息
+            msg.setDelayTimeLevel(4);
             try {
                 SendResult result = defaultMQProducer.send(msg);
                 System.out.println("消息Id:" + result.getMsgId() + " ,  发送状态:" + result.getSendStatus());

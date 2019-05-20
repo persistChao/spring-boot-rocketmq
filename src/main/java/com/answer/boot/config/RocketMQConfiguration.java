@@ -7,6 +7,7 @@ import org.apache.rocketmq.client.consumer.listener.*;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.TransactionMQProducer;
+import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
 import org.apache.rocketmq.common.message.MessageExt;
 import org.apache.rocketmq.common.protocol.heartbeat.MessageModel;
 import org.slf4j.Logger;
@@ -113,6 +114,7 @@ public class RocketMQConfiguration {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(rocketMQProperties.getConsumerGroupName());
         consumer.setNamesrvAddr(rocketMQProperties.getNamesrvAddr());
         consumer.setInstanceName(rocketMQProperties.getConsumerInstanceName());
+        consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 
         //判断是否是广播模式
         if (rocketMQProperties.isConsumerBroadcasting()) {
