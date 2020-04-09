@@ -14,6 +14,7 @@ import java.util.List;
  */
 @Component
 public class ConsumerService {
+
     @EventListener(condition = "#event.msgs[0].topic=='user-topic' &&  #event.msgs[0].tags=='white'")
     public void rocketMqMsgListener(MessageEvent event) {
         try {
